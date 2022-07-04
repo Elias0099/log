@@ -3,3 +3,20 @@
 a{
     text-decoration: none;
 }
+
+body{
+  /* The image used */
+  background-image: url(http://www.munichaclacayo.gob.pe/portals/slider/imagenes/1.jpg) ;
+  /* Full height */
+  height: 65rem;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+

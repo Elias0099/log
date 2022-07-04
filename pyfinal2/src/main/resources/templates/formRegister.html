@@ -10,31 +10,82 @@
         <link th:href="@{/css/estilos.css}" rel="stylesheet" />
     </head>
     <body>
-        <div class="container">
+        <div class="container mt-5 p-5" style="background: white; border-radius: 20px; width: 40rem;height: 44rem">
+            <img th:src="@{/img/muni.png}" class="rounded mx-auto d-block " style="width: 8rem;margin-top: -1rem">
+            <h1 style="font-size: 1.5rem;text-align: center; color: #0A9200; margin-top: 10px">CREAR CUENTA</h1>
             <div class="mb-3">
-                <label for="formFile" class="form-label">Default file input example</label>
-                <input class="form-control" type="file" id="formFile">
-            </div>
-            <div class="mb-3">
-                <label for="formFileMultiple" class="form-label">Multiple files input example</label>
-                <input class="form-control" type="file" id="formFileMultiple" multiple>
-            </div>
-            <div class="mb-3">
-                <label for="formFileDisabled" class="form-label">Disabled file input example</label>
-                <input class="form-control" type="file" id="formFileDisabled" disabled>
-            </div>
-            <div class="mb-3">
-                <label for="formFileSm" class="form-label">Small file input example</label>
-                <input class="form-control form-control-sm" id="formFileSm" type="file">
-            </div>
-            <div>
-                <label for="formFileLg" class="form-label">Large file input example</label>
-                <input class="form-control form-control-lg" id="formFileLg" type="file">
-            </div>
-            <div class="mb-3 w-100 text-center mt-4">
-                <a th:href="@{/}" class="text-info">Ingresar al Sistema</a>
+                <form th:action="@{/auth/}" >
+                    <hr>
+                    <div class="row ">
+                        <div class="col-6 mb-2 d-grid"> 
+                            <div class="d-flex">
+                                <h5>D.N.I</h5> <h6 class="text-danger">*</h6></div>
+                            <input class="form-control" type="text" style="background-color: #F9F9F9; border-radius: 10rem; box-shadow: 0px 3px 2px #9999" >
+                            
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <h5>NOMBRES</h5> <h6 class="text-danger">*</h6></div>
+                            <input class="form-control" type="text" style="background-color: #F9F9F9; border-radius: 10rem; box-shadow: 0px 3px 2px #9999" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <h5>APELLIDO PATERNO</h5> <h6 class="text-danger">*</h6></div>
+                            <input class="form-control" type="text" style="background-color: #F9F9F9; border-radius: 10rem; box-shadow: 0px 3px 2px #9999" >
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <h5>APELLIDO MATERNO</h5> <h6 class="text-danger">*</h6></div>
+                            <input class="form-control" type="text" style="background-color: #F9F9F9; border-radius: 10rem; box-shadow: 0px 3px 2px #9999" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <h5>FECHA NACIMIENTO</h5> <h6 class="text-danger">*</h6></div> 
+                            <input class="form-control" type="date" style="background-color: #F9F9F9; border-radius: 10rem; box-shadow: 0px 3px 2px #9999" >
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <h5>TELÉFONO</h5> <h6 class="text-danger">*</h6></div>
+                            <input class="form-control" type="tel" style="background-color: #F9F9F9; border-radius: 10rem; box-shadow: 0px 3px 2px #9999" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <h5>CORREO </h5> <h6 class="text-danger">*</h6></div>
+                            <input class="form-control" type="text" style="background-color: #F9F9F9; border-radius: 10rem; box-shadow: 0px 3px 2px #9999">
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <h5>DIRECCIÓN</h5> <h6 class="text-danger">*</h6></div>
+                            <input class="form-control" type="text" style="background-color: #F9F9F9; border-radius: 10rem; box-shadow: 0px 3px 2px #9999">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <h5>CARGO</h5> <h6 class="text-danger">*</h6></div>
+                            <input class="form-control mb-3" type="text" style="background-color: #F9F9F9; border-radius: 10rem; box-shadow: 0px 3px 2px #9999">
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <h5>CONTRASEÑA</h5><h6 class="text-danger">*</h6></div>
+                            <input class="form-control mb-3" type="text" style="background-color: #F9F9F9; border-radius: 10rem; box-shadow: 0px 3px 2px #9999">
+                        </div>
+                    </div>
+                    <div class="row">
+
+                    </div>  
+                    <button class="btn btn-primary mt-3 " style="width:13rem;margin-left: 5.5rem;background-color: #0A9200;border-radius: 10rem;border-color: #DDFF00;font-weight: 600">REGISTRARME</button>
+                </form>
+
             </div>
         </div>
+       
 
         <script th:src="@{/js/bootstrap.min.js}"></script>
     </body>
